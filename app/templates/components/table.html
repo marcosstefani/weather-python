@@ -1,0 +1,59 @@
+<div class="container mt-5">
+    <div class="row">
+        <p>
+            <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#modal">
+                Add a New City
+            </button>
+        </p>
+        <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalTitle">Add a New City</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form onsubmit="createCity()">
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="addon-city">City</span>
+                                </div>
+                                <input type="text" class="form-control" id="new-city-name" aria-describedby="addon-city">
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="collapse mb-5" id="collapseExample">
+            <div class="card card-body">
+                <div class="row">
+                        <form class="form-inline">
+                            <div class="form-group mb-2">
+                                <label for="staticEmail2" class="sr-only">Email</label>
+                                <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+                            </div>
+                            <div class="form-group mx-sm-3 mb-2">
+                                <label for="inputPassword2" class="sr-only">Password</label>
+                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary mb-2">Confirm identity</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <table class="table" id="table-weather"></table>
+        </div>
+    </div>
+    <div class="row">
+        <canvas id="myChart" style="height: 370px; max-width: 920px; margin: 0px auto;"></canvas>
+    </div>
+</div>
+
+<script src="{{url_for('static',filename='js/table.js')}}"></script>
