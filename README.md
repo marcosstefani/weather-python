@@ -1,2 +1,2 @@
 # weather-python
-FrontEnd based on Local Service
+FrontEnd designed to be used in the project https://github.com/marcosstefani/weatherdb
