@@ -1,0 +1,6 @@
+.error-container{display:block; width:100%; line-height:1.6em; text-align:center;}
+.error-container .hgroup{margin-bottom:50px;}
+.error-container img{margin-bottom:25px;}
+.error-container p{display:block; margin:0 0 25px 0; padding:0; font-size:16px;}
+.error-container #respond input{width:200px; padding:5px; border:1px solid #CCCCCC;}
+.error-container #respond #submit{width:auto;}
